@@ -27,10 +27,11 @@ public class Task3 {
 			System.out.println("B+");
 		} else if(num >= 89.5 && num < 94.5) {
 			System.out.println("A-");
-		} else {
-			System.out.println("A");
+		} else if(num >= 0 && num < 49.5)  {
+			System.out.println("F");
+		}else{
+			System.out.println("Error");
 		}
-
 	}
 
 }
