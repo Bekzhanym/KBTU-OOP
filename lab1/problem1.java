@@ -16,7 +16,7 @@ class Data {
 
     public Data() {
         sum = 0;
-        max = Double.NEGATIVE_INFINITY;  //Первое введённое число всегда станет максимумом для этого я использвал
+        max = Double.NEGATIVE_INFINITY; 
         count = 0;
     }
 

@@ -57,10 +57,10 @@ public class GradeBook {
         }
         System.out.println("\nGrades distribution:");
         for (int i = 0; i < 11; i++) {
-            if (i == 10) {
-                System.out.print("100: ");
-            } else {
-                System.out.print((i * 10) + "-" + (i * 10 + 9) + ": ");
+            if(i == 10){
+                System.out.println("100:");
+            }else{
+                System.out.println((i*10) + "-" + (i*10 + 9) + ":");
             }
             for (int j = 0; j < freq[i]; j++) System.out.print("*");
             System.out.println();
