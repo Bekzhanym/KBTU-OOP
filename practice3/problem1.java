@@ -17,7 +17,6 @@ public class problem1 {
         Tiger2.drinking(150);   
     }
 }
-
 class Animal {
 
     protected String name;
@@ -69,6 +68,8 @@ class Tiger extends Animal {
     }
 
     public void drinking(int amount) {
-        System.out.println("Tiger drinkings " + amount + " miligram of water");
+        System.out.println("Tiger drinking " + amount + " miligram of water");
     }
 }
+
+// create a class Student with name and age              
