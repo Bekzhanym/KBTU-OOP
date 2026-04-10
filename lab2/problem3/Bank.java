@@ -30,9 +30,6 @@ public class Bank {
         return null;
     }
 
-    /**
-     * Process all accounts: add interest to SavingsAccount, deduct fees from CheckingAccount.
-     */
     public void update() {
         for (Account a : accounts) {
             if (a instanceof SavingsAccount) {

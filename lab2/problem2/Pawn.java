@@ -11,12 +11,12 @@ public class Pawn extends Piece {
     @Override
     public boolean isLegalMove(Position b) {
         if (b == null || !b.isOnBoard()) return false;
-        int dr = b.getRow() - a.getRow();
-        int dc = b.getCol() - a.getCol();
+        int dr = b.getNumber() - a.getNumber();
+        int dc = b.getBukva() - a.getBukva();
         int step = isWhite ? 1 : -1;
 
         if (dc == 0) {
-            return dr == step || (dr == 2 * step && a.getRow() == (isWhite ? 1 : 6));
+            return dr == step || (dr == 2 * step && a.getNumber() == (isWhite ? 1 : 6));
         }
         if (Math.abs(dc) == 1 && dr == step) {
             return true;

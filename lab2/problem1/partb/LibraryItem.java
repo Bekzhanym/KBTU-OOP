@@ -1,7 +1,3 @@
-/**
- * Abstract base class for library items (books, DVDs, magazines).
- * Common properties: title, author, publication year.
- */
 public abstract class LibraryItem {
 
     private String title;

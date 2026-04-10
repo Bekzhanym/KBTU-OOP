@@ -1,7 +1,4 @@
-/**
- * Abstract superclass for a resistor network.
- * Ohm's law: I = V/R, power = V^2/R.
- */
+// Ohm's law: I = V/R, power = V^2/R.
 public abstract class Circuit {
 
     public abstract double getResistance();

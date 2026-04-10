@@ -1,35 +1,35 @@
 public class Position {
 
-    private int row;
-    private int col;
+    private int number;
+    private int bukva;
 
-    public Position(int row, int col) {
-        this.row = row;
-        this.col = col;
+    public Position(int number, int bukva) {
+        this.number = number;
+        this.bukva = bukva;
     }
 
-    public int getRow() {
-        return row;
+    public int getNumber() {
+        return number;
     }
 
-    public int getCol() {
-        return col;
+    public int getBukva() {
+        return bukva;
     }
 
-    public void setRow(int row) {
-        this.row = row;
+    public void setNumber(int number) {
+        this.number = number;
     }
 
-    public void setCol(int col) {
-        this.col = col;
+    public void setBukva(int bukva) {
+        this.bukva = bukva;
     }
 
     public boolean isOnBoard() {
-        return row >= 0 && row <= 7 && col >= 0 && col <= 7;
+        return number >= 0 && number <= 7 && bukva >= 0 && bukva <= 7;
     }
 
     @Override
     public String toString() {
-        return "(" + row + "," + col + ")";
+        return "(" + number + "," + bukva + ")";
     }
 }

@@ -1,7 +1,3 @@
-/**
- * Subclass of Vehicle: car with license plate.
- * Overrides equals and hashCode to include licensePlate.
- */
 public class Car extends Vehicle {
 
     private String licensePlate;

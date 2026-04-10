@@ -7,8 +7,8 @@ public class Queen extends Piece {
     @Override
     public boolean isLegalMove(Position b) {
         if (b == null || !b.isOnBoard()) return false;
-        int dr = Math.abs(b.getRow() - a.getRow());
-        int dc = Math.abs(b.getCol() - a.getCol());
+        int dr = Math.abs(b.getNumber() - a.getNumber());
+        int dc = Math.abs(b.getBukva() - a.getBukva());
         if (dr == 0 && dc == 0) return false;
         return dr == 0 || dc == 0 || dr == dc;
     }
